@@ -5,7 +5,7 @@ function App() {
   const [user, setUser] = useState(null);
   useEffect(() => {
     // NOTE: Use your username below
-    fetch('gitconnected.com/v1/portfolio/wilfried92')
+    fetch('https://gitconnected.com/v1/portfolio/wilfried92')
       .then(res => res.json())
       .then(user => {
         setUser(user);
