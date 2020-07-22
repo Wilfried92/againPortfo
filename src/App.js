@@ -1,12 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Pages from './pages';
 
 function App() {
   const [user, setUser] = useState(null);
   useEffect(() => {
     // NOTE: Use your username below
-    fetch('https://gitconnected.com/v1/portfolio/treyhuffine')
+    fetch('gitconnected.com/v1/portfolio/wilfried92')
       .then(res => res.json())
       .then(user => {
         setUser(user);
